@@ -9,7 +9,7 @@ A python program to covert a serial port to a TCP socket. It is just like the pa
 On the server PC which has the serial port physically:
 - Run the command `python serial_agent_main.py`. It is GUI program.
 - Select the menu item `File | Open Serial Port` and enter the serial port you want to connect.
-- Click the play button or select the menu item `File | Start TCP Server`. The default port number the program listening is 27025.
+- Click the play button or select the menu item `File | Start TCP Server`. The default port number the program listening is 27025.  
 or  
 - Run the command `python serial_agent.py -c <serial port> -p <tcp port>`. It is command line program.  
   For example:  
