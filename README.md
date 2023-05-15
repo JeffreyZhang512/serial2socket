@@ -31,4 +31,7 @@ or
 
 On the client PC:
 - Run your application and open the socket `server_ip_adress:27025` instead of openning the serial port.
-- Send the command and you will get the response from the remote serail port just like it is a local serial port. 
+- Send the command and you will get the response from the remote serail port just like it is a local serial port.
+
+## Raise a Question or Report a Bug
+https://github.com/JeffreyZhang512/serial2socket/issues
