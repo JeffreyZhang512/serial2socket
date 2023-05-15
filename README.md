@@ -1,17 +1,21 @@
 # serial2socket
 A python program to covert a serial port to a TCP socket. It is just like the part of the functions of the utility socat on Linux. Since it is a python program, it can be run on different OS. 
 
+## Binary release
+https://github.com/JeffreyZhang512/serial2socket/releases
+
 ## Preconditions
-- It is a python3 program. You have to install python3.
-- You need also install some addtion python libs via pip, such as pyserial, numpy, pillow.
+If you want to run it from the source, you need:
+- Install python3 since it is a python3 program.
+- Install some addtion python libs via pip, such as pyserial, numpy, pillow.
 
 ## Usage
 On the server PC which has the serial port physically:
-- Run the command `python serial_agent_main.py`. It is GUI program.
+- Run the command `python serial_agent_main.py` or `serial_agent_main.exe`. It is GUI program.
 - Select the menu item `File | Open Serial Port` and enter the serial port you want to connect.
 - Click the play button or select the menu item `File | Start TCP Server`. The default port number the program listening is 27025.  
 or  
-- Run the command `python serial_agent.py -c <serial port> -p <tcp port>`. It is command line program.  
+- Run the command `python serial_agent.py -c <serial port> -p <tcp port>` or `serial_agent.exe -c <serial port> -p <tcp port>`. It is command line program.  
   For example:  
   C:\Developments\serial2socket>python serial_agent.py -c COM12 -p 27025  
   [2023-05-11 15:59:06] INFO    Serial Agent v1.0.0, press x then enter key to quit  
