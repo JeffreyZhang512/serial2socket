@@ -43,7 +43,7 @@ class serial_agent():
 
 
     def __init__(self, serial_port_name, tcp_port_name):
-        self.log("Serial Agent v0.1.0.0, press x then enter key to quit", LOG_SEVERITY_INFO)
+        self.log("Serial Agent v0.2.0.0, press x then enter key to quit", LOG_SEVERITY_INFO)
         self.error = 0
         if serial_port_name == "":
             self.log("Serial port not specified", LOG_SEVERITY_ERROR)

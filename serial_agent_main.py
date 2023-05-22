@@ -778,7 +778,7 @@ class serial_agent(dialog):
 def serial_to_socket_main():
     root = Tk()
     root.withdraw()
-    serial_agent(root, True, "Serial Agent v0.1.0.0")
+    serial_agent(root, True, "Serial Agent v0.2.0.0")
     root.mainloop()    
 
 
