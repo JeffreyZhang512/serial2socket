@@ -183,13 +183,14 @@ class serial_agent(dialog):
         # Button image
         try:
             pil_image = Image.fromarray(run_button_image)
-            pil_image = pil_image.resize((self.image_width, self.image_height), Image.Resampling.LANCZOS)
+            # pil_image = pil_image.resize((self.image_width, self.image_height), Image.Resampling.LANCZOS)
  
             pil_image_low_brightness = ImageEnhance.Brightness(pil_image).enhance(0.75)
             
             self.tk_image = ImageTk.PhotoImage(image = pil_image)
             self.tk_image_low_brightness = ImageTk.PhotoImage(image = pil_image_low_brightness)
         except:
+            print("Load Image Failed")
             self.load_image = False
         else:
             self.load_image = True
@@ -778,7 +779,7 @@ class serial_agent(dialog):
 def serial_to_socket_main():
     root = Tk()
     root.withdraw()
-    serial_agent(root, True, "Serial Agent v0.2.0.0")
+    serial_agent(root, True, "Serial Agent v0.3.0.0")
     root.mainloop()    
 
 
