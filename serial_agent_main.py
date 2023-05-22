@@ -193,7 +193,6 @@ class serial_agent(dialog):
             self.load_image = False
         else:
             self.load_image = True
-        
         # Controls
         font_id = tkFont.Font(family = 'Calibri', size = 11)
 
@@ -320,7 +319,7 @@ class serial_agent(dialog):
                 return
             
             if self.load_image == False:
-                self.button_run.configure(state = DISABLED)
+                self.button_run.configure(text = "Stop")
             else:
                 self.canvas.delete(ALL)
                 self.canvas.create_image(self.image_width / 2, self.image_height / 2, image = self.tk_image_low_brightness)
@@ -332,7 +331,7 @@ class serial_agent(dialog):
             self.thread_tcp_server.start()
         else:
             if self.load_image == False:
-                self.button_run.configure(state = NORMAL)
+                self.button_run.configure(text = "Start")
             else:
                 self.canvas.delete(ALL)
                 self.canvas.create_image(self.image_width / 2, self.image_height / 2, image = self.tk_image)
